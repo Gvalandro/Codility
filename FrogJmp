@@ -1,0 +1,14 @@
+// you can also use imports, for example:
+import java.lang.*;
+
+// you can write to stdout for debugging purposes, e.g.
+// System.out.println("this is a debug message");
+
+class Solution {
+    public int solution(int X, int Y, int D) {
+        double dif = Y - X;
+        double cont = Math.ceil((dif/D));
+        int res = (int)cont;
+        return res;
+    }
+}
