@@ -1,0 +1,22 @@
+// you can also use imports, for example:
+import java.util.*;
+
+// you can write to stdout for debugging purposes, e.g.
+// System.out.println("this is a debug message");
+
+class Solution {
+    public int solution(int[] A) {
+        int menor = 1,j=0;
+        Arrays.sort(A);
+
+    while(j< A.length){
+        if( A[j] == menor){
+            menor += 1;
+        }
+        j++;
+    }
+
+    return menor;
+
+    }
+}
